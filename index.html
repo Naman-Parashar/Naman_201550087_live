@@ -5,8 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project_Test</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<body>
-    <h1>This is </h1>
+<body onload="write()">
+    <div class="container">
+        <div class="nav">
+            <img id="logo" src="koral.png" alt="bamboo" height="100px">
+            <ul class="lists">
+                <li class="list" id="list1"><a href="#" class="links" id="link1">HOME</a></li>
+                <li class="list" id="list2"><a href="#" class="links" id="link2">PAGES</a></li>
+                <li class="list" id="list3"><a href="#" class="links" id="link3">PORTFOLIOS</a></li>
+                <li class="list" id="list4"><a href="#" class="links" id="link4">HEADERS</a></li>
+                <li class="list" id="list5"><a href="#" class="links" id="link5">ELEMENT</a></li>
+                <li class="list" id="list5"><a href="#" class="links" id="link5">BLOG</a></li>
+            </ul>
+            <div class="icon">
+            <i id="fa1" class="fa fa-search" aria-hidden="true"></i>
+            <i id="fa2" class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i id="fa3" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <pre id="pre1">
+             Perfect images 
+            for perfect websites
+        </pre>
+
+        <pre id="pre2">
+        Lorem ipsum dolor sit amet, consectetur bfhbhdfd vfbvifbv fhvbdfh bchdsvhd
+        adipisicing elit Quisquam quasi similique eum odit.
+       </pre>
+
+       <div class="buttons">
+        <button type="button" class="btn" id="btn1">Explore More</button>
+        <button type="button" class="btn" id="btn2">Buy Now</button>
+       </div>
+
+       <footer class="foot">
+        <p id="sname">Student Name</p>
+        <p id ="sroll"> University Roll No.</p>
+        <p>GLA University,Mathure </p>
+        <p id ="date">Date</p>
+       </footer>
+    </div>
+
+    <script>
+        function write(){
+            var name = prompt("Enter your name");
+            document.getElementById("sname").innerText = name;
+
+            var roll = prompt("enter your roll number");
+            document.getElementById("sroll").innerText = roll;
+           
+
+            var now = new Date();
+            var y = now.getFullYear()	           
+            var m =now.getMonth()	                
+            var d =now.getDate()
+            var da = d+"-"+m+"-"+y;
+            document.getElementById("date").innerText = da;
+        }
+    </script>
 </body>
 </html>
