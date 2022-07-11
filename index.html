@@ -59,9 +59,9 @@
            
 
             var now = new Date();
-            var y = now.getFullYear()	           
-            var m =now.getMonth()	                
-            var d =now.getDate()
+            var y = now.getFullYear();           
+            var m =now.getMonth()+1;              
+            var d =now.getDate();
             var da = d+"-"+m+"-"+y;
             document.getElementById("date").innerText = da;
         }
